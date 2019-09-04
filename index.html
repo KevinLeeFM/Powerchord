@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/tone"></script>
+    <script src="scripts/music/jsmidgen.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script src="http://danml.com/js/download.js"></script>
+    <script src="scripts/main.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <img src="assets/textures/branding/wordmark.png" alt="Powerchord" class="title"/>
+    <!--The container in which the game is running-->
+    <div id="powerchord">
+        <div id="start-menu">
+            <h1 class="centered">Game Settings</h1>
+            <table class="setting-table">
+                <tr>
+                    <td>
+                        Tempo (BPM):
+                    </td>
+                    <td>
+                        <input type="number" id="bpm" min="50" max="220">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Key
+                    </td>
+                    <td>
+                        <select id="key">
+                             
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Snare Rhythm:
+                    </td>
+                    <td id="snare">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Kick Rhythm:
+                    </td>
+                    <td id="kick">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hi-Hat Rhythm:
+                    </td>
+                    <td id="hiHat">
+                    </td>
+                </tr>
+            </table>
+            <p class="centered" id="notice"></p>
+            <button type="button" id="start-game" class="btn" >Start Game</button>
+        </div>
+    </div>
+
+    <p>IMPORTANT NOTE: Very rarely you may encounter the notes playback glitching. I do not know why this happens, but refreshing the page usually fixes it.</p>
+
+    <h2>Instructions</h2>
+    <p>You are a galactically-famous guitar artist, and as per usual a part of tonight's performance is to fend off an endless hoard of insectoid fans from your sacred stage. Play your electric guitar and produce divine notes to <strike>kill</strike>— I mean ... satiate their fanaticism (if you can hit them, that is)!</p>
+
+    <p>Produce notes by <i>HOLDING (not tapping)</i> the keys from the top keyboard letter row, eaching corresponding to a powerchord on the "Metallica" or locrian/aeolian mixed scale as well as a location on the stage:</p>
+
+    <img src="assets/textures/ui/metallica_scale.png" class="container">
+
+    <p>If you play your powerchord on the <b>snares</b> (the "boom!") of the drumbeat, you will produce an accented note, which will deal double the <strike>damage</strike>— I mean ... musical splendour against your fans!</p>
+
+    <p>When the game is over, you can listen over the masterpiece that you've created! You can also download it as a MIDI file (though it's still kind of buggy ... no puns intended), or in a JSON format.</p>
+
+    <p>
+        <ul>
+            <li>Green bugs <img src="assets/textures/game/bug_small.png"> take 1 musical splendour to defeat</li>
+            <li>Purple bugs <img src="assets/textures/game/bug_large.png"> takes 10 musical splendour to defeat</li>
+        
+            <li>Your green notes <img src="assets/textures/game/note_small.png"> deals 1 musical splendour</li>
+            <li>Your accented notes <img src="assets/textures/game/note_large.png"> deals 5 musical splendour</li>
+        </ul>
+    Keep your eyes peeled for purple bugs!
+    </p>
+
+    <h2>Strategy</h2>
+    <p>Do not think that increasing BPM gives you an advantage: doing so also increases bug spawn rate!</p>
+    <p>Sometimes you may see bugs clump together on one column, that's because they're demanding you to play a <i>pedal</i> of that note. Keep one finger hovering on that note and default to it when that column gets out of hand.</p>
+    <p>Some riffs to try out for your fans if the bugs are not bothersome to you:</p>
+    <ul class="monospace">
+        <li>Q.R.T.Y.Q.Y.T.R.</li>
+        <li>Q.E.R.T.U.I.W.....</li>
+        <li>Q.......Y...T.R.</li>
+    </ul>
+
+    <p>If you want to imitate heavy metal music, make sure to ocassionally jump to and linger on <span class="monospace">W</span> or <span class="monospace">Y</span>. They're the nastiest notes in the scale!</p>
+
+    <h2>Inspiration/Source</h2>
+
+    <iframe class="container" width="900" height="506" src="https://www.youtube.com/embed/UuqvZDDm_bk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Tools</h2>
+    <ul>
+        <li>Sprite Editor: <a href="https://krita.org/en/" target="_blank">Krita</a></li>
+        <li>Pixel Palette: <a href="https://lospec.com/palette-list/journey" target="_blank">Journey</a></li>
+        <li>Font: <a href="https://fontstruct.com/fontstructions/show/1423872/eneminds-bold" target="_blank">Eneminds Bold</a></br>The FontStruction “Eneminds Bold” (https://fontstruct.com/fontstructions/show/1423872) by “13x666” is licensed under a Creative Commons Attribution license (http://creativecommons.org/licenses/by/3.0/).</li>
+        <li>Game Engine: <a href="https://phaser.io/" target="_blank">Phaser 3</a></li>
+        <li>Sampling Audio API: <a href="https://tonejs.github.io/docs/" target="_blank">Tone.js</a></li>
+        <li>MIDI Export API: <a href="https://github.com/dingram/jsmidgen" target="_blank">jsmidgen</a></li>
+        <li>Samples: GarageBand instruments</li>
+    </ul>
+
+<p class="centered">Copyright © 2019 Veloce Wattwing</p>
+</body>
+</html>

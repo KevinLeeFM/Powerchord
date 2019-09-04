@@ -1,0 +1,88 @@
+@font-face {
+/*
+The FontStruction “Eneminds Bold” (https://fontstruct.com/fontstructions/show/1423872) by “13x666” is licensed under a Creative Commons Attribution license (http://creativecommons.org/licenses/by/3.0/).
+*/
+  font-family: 'Eneminds Bold';
+  src: url('./assets/fonts/eneminds-bold/eneminds-bold.ttf') format('truetype');
+}
+
+body {
+    color: #faffff;
+    background-color: #24142c;
+    font-family: 'Eneminds Bold', Arial, Helvetica, sans-serif;
+    padding: 50px;
+}
+
+p, td, th, btn, input, select {
+    font-family: 'Eneminds Bold', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 400px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+}
+
+#powerchord {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+    width: 800px;
+    height: auto;
+    transition: height 1s ease-in-out;
+}
+
+.container {
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+}
+
+.monospace {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.setting-table {
+    padding: 2px;
+    margin: auto;
+}
+
+.btn {
+    font-family: 'Eneminds Bold', Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: #24142c;
+    font-size: 16px;
+    background-color: #d61a88;
+    cursor: pointer;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+
+select, input {
+    font-family: 'Eneminds Bold', Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: #24142c;
+    font-size: 16px;
+    background-color: #d61a88;
+}
+
+#notice {
+    color: #d61a88;
+}
