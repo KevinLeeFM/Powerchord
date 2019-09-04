@@ -1,7 +1,9 @@
 # Powerchord
  A game for a Repl.it code jam that allows players to create music using musical techniques employed in heavy metal music. The created music can then be downloaded as MIDI file.
 
-# Instructions
+Play here: https://Powerchord--velocewattwing.repl.co
+
+## Instructions
 
 You are a galactically-famous guitar artist, and as per usual a part of tonight's performance is to fend off an endless hoard of insectoid fans from your sacred stage. Play your electric guitar and produce divine notes to satiate their fanaticism (if you can hit them, that is).
 
@@ -18,7 +20,7 @@ When the game is over, you can listen over the masterpiece that you've created! 
 
 Keep your eyes peeled for purple bugs!
 
-Strategy
+## Strategy
 
 Do not think that increasing BPM gives you an advantage: doing so also increases bug spawn rate!
 
